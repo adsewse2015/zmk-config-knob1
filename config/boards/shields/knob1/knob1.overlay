@@ -1,0 +1,17 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+        // Other chosen items
+    };
+
+    default_kscan: kscan {
+        compatible = "zmk,kscan-gpio-direct";
+        label = "defualt_kscan";
+
+        input-gpios =
+            <&pro_micro 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+            <&pro_micro 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    };
+};

@@ -1,0 +1,13 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer { // Layer 0
+            // -------------
+            // |     KNB     |     Mut     |
+            bindings = <
+                &kp C_MUTE &kp F20
+            >;
+        };
+    };
+ };
