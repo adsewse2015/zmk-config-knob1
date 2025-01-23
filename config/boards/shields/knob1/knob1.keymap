@@ -10,7 +10,8 @@
             // -------------
             // |     KNB     |     Mut     |
             bindings = <
-                &kp C_MUTE &kp F20
+                &kp C_MUTE
+                &kp F20
             >;
         };
     };
