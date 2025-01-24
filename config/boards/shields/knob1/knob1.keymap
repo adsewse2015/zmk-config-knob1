@@ -8,13 +8,13 @@
 
         default_layer { // Layer 0
             display-name = "Base";
-            // -------------
-            // |     KNB     |     Mut     |
+            // ---------------
+            // |     KNB     |
+            // |     Mut     |
             bindings = <
                 &kp C_MUTE
                 &kp F20
             >;
         };
     };
-     &studio_unlock
  };
