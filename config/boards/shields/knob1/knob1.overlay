@@ -2,7 +2,7 @@
 #include "knob1-layouts.dtsi"   
 
 / {
-    chosen {
+        chosen {
         zmk,physical-layout = &physical_layout0;
         // Other chosen items
     };
