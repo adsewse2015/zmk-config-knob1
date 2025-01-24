@@ -1,9 +1,14 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "knob1-layouts.dtsi"
+#include "knob1-layouts.dtsi"   
+
+&physical_layout0 {
+    transform = <&matrix_transform>;
+};
 
 / {
     chosen {
         zmk,physical-layout = &physical_layout0;
+        zmk,kscan = <&kscan0>;
         // Other chosen items
     };
 
