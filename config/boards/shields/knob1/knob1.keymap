@@ -31,7 +31,7 @@
             // |studio_unlock|
             // |             |
             // ---------------
-                &trans
+                &bootloader
                 &studio_unlock
                 &trans
             >;
