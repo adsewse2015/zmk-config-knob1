@@ -50,7 +50,7 @@
                 &tog 1
                 &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp BT_DISC BT_CLR>;
         };
     };
  };
