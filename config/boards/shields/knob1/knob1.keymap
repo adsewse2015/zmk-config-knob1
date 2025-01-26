@@ -36,7 +36,7 @@
                 &kp  LC(R)
                 &tog 1
             >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
         function_layer {
             display-name = "fn";
