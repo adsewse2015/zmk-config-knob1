@@ -32,7 +32,7 @@
             // |     F20     |
             // |     tog 1   |
             // --------------- 
-                &kp  LC(R)
+                &kp  LC(TAB)
                 &bt BT_CLR
                 &tog 1
             >;
