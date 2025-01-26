@@ -19,7 +19,7 @@
             bindings = <
                 &kp C_MUTE
                 &kp F20
-                &lt 1 F19
+                &lt 1 C_PLAY_PAUSE
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
