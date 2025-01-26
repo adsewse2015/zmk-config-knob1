@@ -32,8 +32,8 @@
             // |     F20     |
             // |     tog 1   |
             // --------------- 
-                &bootloader
                 &kp  LC(R)
+                &bt BT_CLR
                 &tog 1
             >;
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -46,7 +46,7 @@
             // |studio_unlock|
             // |             |
             // ---------------
-                &bt BT_CLR
+                &bootloader
                 &tog 1
                 &trans
             >;
