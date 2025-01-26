@@ -32,7 +32,7 @@
             // |     F20     |
             // |     tog 1   |
             // --------------- 
-                &bt BT_CLR
+                &bootloader
                 &kp  LC(R)
                 &tog 1
             >;
@@ -46,7 +46,7 @@
             // |studio_unlock|
             // |             |
             // ---------------
-                &bootloader
+                &bt BT_CLR
                 &tog 1
                 &trans
             >;
