@@ -32,7 +32,7 @@
             // |     F20     |
             // |     tog 1   |
             // --------------- 
-                &trans
+                &bt BT_CLR
                 &kp  LC(R)
                 &tog 1
             >;
@@ -50,7 +50,7 @@
                 &tog 1
                 &trans
             >;
-            sensor-bindings = <&inc_dec_kp BT_DISC BT_CLR>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
  };
