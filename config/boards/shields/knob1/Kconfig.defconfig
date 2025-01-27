@@ -1,4 +1,4 @@
-if SHIELD_KNOB1
+if SHIELD_knob1
 
 config ZMK_KEYBOARD_NAME
     default "knob1 BT"
