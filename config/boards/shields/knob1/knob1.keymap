@@ -43,7 +43,7 @@
             // --------------- 
                 &kp LC(TAB)
                 &bt BT_CLR
-                &lt 2 F19
+                &tog 1
             >;
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
