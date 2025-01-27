@@ -12,7 +12,7 @@
         rot_0: rot_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp LA(LC(TAB))>, <&out OUT_TOG>;
+            bindings = <&out OUT_USB>, <&out OUT_BLE>;
         };
     };
 
