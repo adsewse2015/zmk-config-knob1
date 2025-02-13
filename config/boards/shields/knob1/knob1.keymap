@@ -23,13 +23,13 @@
             display-name = "Base";
             bindings = <
             // ---------------
-            // |     play/p  |
-            // |     F20     |
-            // | l-tap mut   |
+            // | Play/p      |
+            // | F20         |
+            // | L-tap mut   |
             // --------------- 
                 &kp C_PLAY_PAUSE
                 &kp F20
-                &lt 2 C_MUTE
+                &lt 2 C_NEXT
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -37,9 +37,9 @@
             display-name = "Nav";
             bindings = <
             // ---------------
-            // |change tab   |
-            // |  bt unbound |
-            // |     tog 1   |
+            // |   LC tab    |
+            // |   LA tab    |
+            // |   L tap F19 |
             // --------------- 
                 &kp LC(TAB)
                 &kp LA(TAB)
@@ -51,8 +51,8 @@
             display-name = "fn";
             bindings = <
             // ---------------
-            // |    trans    |
-            // |studio_unlock|
+            // | L tog       |
+            // | bootloader  |
             // |             |
             // ---------------
                 &tog 1
