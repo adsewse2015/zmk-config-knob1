@@ -10,7 +10,7 @@
 
 / {
     behaviors {
-        rot_encoder: rot_encoder {
+        rot_0: rot_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>;
