@@ -60,7 +60,7 @@
             &bootloader
             &tog 2
             >;
-            sensor-bindings = <&rot_encoder>;
+            sensor-bindings = <&rot_0>;
         };
         function_layer {
             display-name = "fn";
