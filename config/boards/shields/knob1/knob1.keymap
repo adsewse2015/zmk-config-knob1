@@ -5,7 +5,7 @@
 
 #define default_layer 0
 #define navigation_layer  1
-#define utils_laper 2
+#define utils_layer 2
 #define function_layer   3
 
 / {
