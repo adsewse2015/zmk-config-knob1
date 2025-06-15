@@ -10,7 +10,7 @@
 
 / {
     behaviors {
-        rot_encoder: rot_encoder {
+        rot0: rot_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&bt BT_NXT>, <&bt BT_DISC>;
@@ -60,7 +60,7 @@
             &bootloader
             &tog 2
             >;
-            sensor-bindings = <&rot_encoder>;
+            sensor-bindings = <&rot0>;
         };
         function_layer {
             display-name = "fn";
@@ -74,7 +74,7 @@
                 &to 2
                 &trans
             >;
-            sensor-bindings = <&rot_encoder>;
+            sensor-bindings = <&rot0>;
         };
     };
  };
