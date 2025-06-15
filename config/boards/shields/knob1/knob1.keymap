@@ -4,16 +4,16 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define default_layer 0
-#define navigation_layer  1
+#define navigation_layer 1
 #define utils_layer 2
-#define function_layer   3
+#define function_layer 3
 
 / {
     behaviors {
         rot_encoder: rot_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>;
+            bindings = <&bt BT_NXT>, <&bt BT_DISC>;
         };
     };
 
@@ -70,8 +70,8 @@
             // | bootloader  |
             // |             |
             // ---------------
-                &tog 1
-                &tog 2
+                &to 1
+                &to 2
                 &trans
             >;
             sensor-bindings = <&rot_encoder>;
