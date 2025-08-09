@@ -56,7 +56,7 @@
             // |             |
             // ---------------
                 &tog 1
-                &kp BT_CLR
+                &bt BT_CLR
                 &trans
             >;
             sensor-bindings = <&rot_0>;
