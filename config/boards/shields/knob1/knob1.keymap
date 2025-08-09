@@ -13,7 +13,7 @@
         rot0: rot_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&bt BT_NXT>, <&bt BT_DISC>;
+            bindings = <&bt BT_NXT>, <&bt BT_PRV>;
         };
     };
 
