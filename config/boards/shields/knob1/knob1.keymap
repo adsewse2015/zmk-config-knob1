@@ -66,8 +66,8 @@
             display-name = "fn";
             bindings = <
             // ---------------
-            // | L tog       |
-            // | bootloader  |
+            // | L tog nav   |
+            // | L tog util  |
             // |             |
             // ---------------
                 &to 1
