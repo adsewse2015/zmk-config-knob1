@@ -56,7 +56,7 @@
             // |   bootldr   |
             // |   Lt fn     |
             // --------------- 
-            &kp BT_CLR
+            &bt BT_CLR
             &bootloader
             &tog 2
             >;
