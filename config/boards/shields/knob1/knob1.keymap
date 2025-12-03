@@ -4,18 +4,18 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define default_layer 0
-#define navigation_layer 1
-#define utils_layer 2
+#define navigation_layer  1
+#define system_layer 2
 #define function_layer 3
 
 / {
-    behaviors {
-        rot0: rot_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&bt BT_NXT>, <&bt BT_PRV>;
-        };
-    };
+    //behaviors {
+    //    rot_0: rot_encoder {
+    //        compatible = "zmk,behavior-sensor-rotate";
+    //        #sensor-binding-cells = <0>;
+    //        bindings = <&out OUT_TOG>, <&bt BT_CLR>;
+    //    };
+    //};
 
     keymap {
         compatible = "zmk,keymap";
@@ -23,12 +23,7 @@
         default_layer { // Layer 0
             display-name = "Base";
             bindings = <
-            // ---------------
-            // | Play/p      |
-            // | F20         |
-            // | L-tap next  |
-            // --------------- 
-                &kp C_PLAY_PAUSE
+                &lt 2 C_PLAY_PAUSE
                 &kp F20
                 &lt 3 C_NEXT
             >;
@@ -37,44 +32,29 @@
         navigation_layer {
             display-name = "Nav";
             bindings = <
-            // ---------------
-            // |   LC tab    |
-            // |   LA tab    |
-            // |   L tap F19 |
-            // --------------- 
                 &kp LC(TAB)
-                &kp LA(TAB)
-                &lt 3 F19
+                &kp LC(LS(TAB))
+                &lt 3 none
             >;
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
-        utils_layer {
-            display-name = "utils";
+        system_layer {
+            display-name = "system";
             bindings = <
-            // ---------------
-            // |   bt_clr    |
-            // |   bootldr   |
-            // |   Lt fn     |
-            // --------------- 
-            &bt BT_CLR
-            &bootloader
-            &tog 2
+                &trans
+                &none
+                &none
             >;
-            sensor-bindings = <&rot0>;
+            sensor-bindings = <&inc_dec_kp LC(C_VOL_UP) LC(C_VOL_DN)>;
         };
         function_layer {
             display-name = "fn";
             bindings = <
-            // ---------------
-            // | L tog nav   |
-            // | L tog util  |
-            // |             |
-            // ---------------
-                &to 1
-                &to 2
+                &tog 1
+                &bt BT_CLR
                 &trans
             >;
-            sensor-bindings = <&rot0>;
+            sensor-bindings = <&inc_dec_kp <&inc_dec_kp LC(LS(F5)) LC(LS(LA(F5)))>;
         };
     };
  };
