@@ -54,7 +54,7 @@
                 &bt BT_CLR
                 &trans
             >;
-            sensor-bindings = <&inc_dec_kp <&inc_dec_kp LC(LS(F5)) LC(LS(LA(F5)))>;
+            sensor-bindings = <&inc_dec_kp LC(LS(F5)) LC(LS(LA(F5)))>;
         };
     };
  };
