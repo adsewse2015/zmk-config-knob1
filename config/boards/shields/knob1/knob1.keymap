@@ -42,10 +42,10 @@
             display-name = "system";
             bindings = <
                 &trans
-                &none
-                &none
+                &kp LC(C_VOL_UP)
+                &kp LC(C_VOL_DN)
             >;
-            sensor-bindings = <&inc_dec_kp LC(C_VOL_UP) LC(C_VOL_DN)>;
+            sensor-bindings = <&inc_dec_kp F19 F18>;
         };
         function_layer {
             display-name = "fn";
