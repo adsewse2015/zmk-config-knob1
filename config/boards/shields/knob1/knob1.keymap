@@ -34,7 +34,7 @@
             bindings = <
                 &kp LC(TAB)
                 &kp LC(LS(TAB))
-                &lt 3 none
+                &mo 3
             >;
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
