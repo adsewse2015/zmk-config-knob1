@@ -24,7 +24,7 @@
             display-name = "Base";
             bindings = <
                 &lt system_layer C_PLAY_PAUSE
-                &kp F20
+                &kp LC(LS(F20))
                 &lt function_layer C_NEXT
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -36,7 +36,7 @@
                 &kp LC(LS(TAB))
                 &mo function_layer
             >;
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
         system_layer {
             display-name = "system";
