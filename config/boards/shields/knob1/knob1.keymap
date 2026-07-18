@@ -23,7 +23,7 @@
         default_layer { // Layer 0
             display-name = "Base";
             bindings = <
-                &lt system_layer C_PLAY_PAUSE
+                &lt system_layer LC(LS(LA(F14)))
                 &kp LC(LS(F20))
                 &lt function_layer C_NEXT
             >;
